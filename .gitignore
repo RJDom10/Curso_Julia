@@ -1,0 +1,74 @@
+# ==============================================================================
+# Repositorio: Curso de Julia para la Ciencia de Datos y Negocios
+# Archivo de exclusion de Git (.gitignore)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Material Docente Privado (Soluciones)
+# ------------------------------------------------------------------------------
+# La carpeta de solucionarios debe permanecer local y nunca subirse al repositorio publico.
+04_Solucionario_Docente/
+04_Solucionario_Docente/*
+
+# ------------------------------------------------------------------------------
+# Entorno y Dependencias de Julia
+# ------------------------------------------------------------------------------
+# Se conserva Project.toml para reproducibilidad.
+# Manifest.toml puede ser ignorado para evitar conflictos de arquitectura si se desea,
+# o incluirse si se requiere fijar versiones exactas de hash.
+# En este entorno de ensenanza, se permite que cada estudiante instancie segun su SO:
+Manifest.toml
+
+# Archivos de cache y precompilacion de Julia
+*.ji
+*.so
+*.dylib
+*.dll
+*.cov
+*.mem
+
+# ------------------------------------------------------------------------------
+# Datos Generados y Archivos Temporales de Ejecucion
+# ------------------------------------------------------------------------------
+# Excluir conjuntos de datos temporales o de salida generados en ejecuciones locales
+*.arrow
+*.parquet
+*.jld2
+*.h5
+*.feather
+data_temp/
+temp/
+scratch/
+*.log
+
+# ------------------------------------------------------------------------------
+# Configuraciones de Editores de Codigo e IDEs
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm / IntelliJ
+.idea/
+
+# Jupyter Notebook / IJulia checkpoints
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------------
+# Archivos de Sistema Operativo
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
